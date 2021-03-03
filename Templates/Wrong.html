@@ -1,0 +1,9 @@
+{% extends 'BasicTemplate.html' %}
+{% block content %}
+    {% for post in posts %}
+        <h2>The name is {{post.author}}</h2>
+        <h3>Movie name is {{post.Title}}</h3>
+            <p> {{post.Nationality}}</p>
+    {% endfor %}
+{% endblock %}
+
